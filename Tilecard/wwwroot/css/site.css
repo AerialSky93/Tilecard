@@ -1,0 +1,281 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+@import "../color-palette.scss";
+@import "../modules/checkbox.scss";
+@import "../typography.scss";
+@import "../vars.scss";
+
+/*Card Notes for Picture and Text
+
+
+Google Material Icons: https://github.com/google/material-design-icons/blob/master/iconfont/codepoints
+expand_less e5ce
+expand_more e5cf*/
+
+
+.card {
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 8px;
+    display: inline-block;
+    overflow: hidden;
+    transition:200ms;
+    background-color: rgba(255,255,255,1);
+}
+
+.card-header {
+    color: #ffffff;
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    transition: 200ms;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    border-bottom: none;
+}
+
+.card-body {
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 80%;
+    transition: 200ms;
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+.checkbox.card {
+    border-color: transparent;
+    position: absolute;
+    margin: 0px;
+    right: 0px;
+    top: 2px;
+    border-color: transparent;
+    background-color: transparent;
+    /*vertical-align: middle;
+    float: right;*/
+    text-align: right;
+    overflow: visible;
+    transition: 200ms;
+}
+
+
+.cardtoolsetdelete {
+    position: relative;
+    right: -1.5px;
+    bottom: 31px;
+    display: inline-block;
+    color: grey;
+    font-family: Material Icons;
+    visibility: hidden;
+}
+
+
+
+.cardtoolsetnotification {
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    display: inline-block;
+    color: grey;
+    font-family: Material Icons;
+    visibility: hidden;
+}
+
+
+
+.checkbox.card .k-checkbox-label {
+    transform: scale(0.75);
+    right: 8px;
+}
+
+
+.card:hover .k-checkbox-label:before {
+    visibility: visible;
+    transition: all 120ms;
+}
+
+
+.cardcontainer:hover
+.card {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.card:hover 
+{
+    background-color: rgba(0,0,0,.4);
+    transition: 200ms;
+}
+
+& .card-body {
+    background-color: rgba(0,0,0,.4);
+    transition: 200ms;
+}
+
+.imgcard {
+    opacity: .6;
+    transition: 200ms;
+}
+
+& .card {
+    background-color: #ffffff;
+    opacity: 1;
+    border-color: grey;
+    transition: 200ms;
+}
+
+& .checkbox.card {
+    background-color: transparent;
+    border-color: transparent;
+    transition: 200ms;
+}
+
+& .cardtoolsetnotification {
+    visibility: visible;
+    transition: 200ms;
+}
+
+}
+
+.cardcontainer:not(hover) .cardtoolsetdelete {
+    visibility: hidden;
+    transition: all 120ms;
+}
+
+.cardcontainer:hover .cardtoolsetdelete {
+    visibility: visible;
+    transition: 200ms;
+}
+
+
+
+.cardcontainer:not(hover) .cardtoolsetnotification {
+    visibility: hidden;
+    transition: all 120ms;
+}
+
+.cardcontainer:hover .cardtoolsetnotification {
+    visibility: visible;
+    transition: 200ms;
+}
+
+
+
+
+.card:not(hover) .card-header {
+    transition: 200ms;
+}
+
+.card:not(hover) .card-body {
+    transition: 200ms;
+}
+
+.card:not(hover) .k-checkbox-label:before {
+    visibility: hidden;
+    transition: all 80ms;
+}
+
+
+.card-header .accordion-toggle {
+    &.collapsed:after
+
+{
+    font-family: 'Material Icons';
+    color: white;
+    content: "\e5cf";
+}
+
+&:after {
+    font-family: 'Material Icons';
+    color: white;
+    content: "\e5ce";
+    float: right;
+}
+
+}
+
+
+.imgcard {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    width: 100%;
+    background-color: grey;
+    padding: 0px;
+}
+
